@@ -141,6 +141,7 @@ section {
 
 .grid {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 75px;
   margin: 20px;
@@ -298,11 +299,8 @@ a {
   color: var(--yellow);
 }
 
-.slug {
-  width: 100%;
-  max-width: 1440px;
-  height: 100px;
-  margin: auto;
+.column-slug {
+  grid-column: 1/13;
 }
 
 .copyright {

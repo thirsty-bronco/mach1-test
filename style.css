@@ -192,12 +192,14 @@ section {
   padding: 100px 0 0 0;
   font-size: 0.75em;
   font-weight: 600;
+  color: var(--dark-grey);
   text-transform: uppercase;
   text-align: left;
 }
 
 #product-heading {
   font-size: 2em;
+  color: var(--dark-grey);
   letter-spacing: -.05em;
   font-weight: 600;
   text-align: left;

@@ -295,6 +295,10 @@ a {
   flex-direction: column;
 }
 
+.footer-links a {
+  cursor: pointer;
+}
+
 .footer-links a:hover {
   color: var(--yellow);
 }

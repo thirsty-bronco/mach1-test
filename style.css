@@ -232,10 +232,9 @@ section {
 
 
 #product-heading {
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--dark-grey);
-  letter-spacing: -.05em;
-  font-weight: 600;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -376,11 +375,23 @@ a {
     padding: 10px;
   }
 
-  .column1 {
+  .column-1-5 {
     grid-column: 1/5;
   }
 
-  .column2 {
+  .column-5-9 {
+    grid-column: 1/5;
+  }
+
+  .column-9-13 {
+    grid-column: 1/5;
+  }
+
+  .column-2-7 {
+    grid-column: 1/5;
+  }
+
+  .column-7-12 {
     grid-column: 1/5;
   }
 

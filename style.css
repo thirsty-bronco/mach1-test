@@ -208,12 +208,12 @@ section {
   max-width: 100%;
 }
 
-.middle {
-  margin: auto;
-}
 
-.middle img {
-  width: 150px;
+.align-center {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  width: 80%;
 }
 
 .product {

@@ -272,21 +272,18 @@ a {
 
 /* FOOTER */
 
-#footer {
-  
+footer {
   width: 100%;
   max-width: 1440px;
   margin: auto;
-  display: flex;
+  color: var(--light-grey);
 }
 
-#footer button {
-  font-size: 0.8em;
-}
-
-#footer .grid {
-  border-top: 1px dotted var(--light-grey);
+footer .grid {
+  border-top: 1px solid var(--light-grey);
   padding: 1em 0 0 0;
+  text-align: left;
+  grid-column-gap: 50px;
 }
 
 
@@ -303,31 +300,52 @@ a {
 }
 
 .footer-column4 {
-  grid-column: 7/12;
+  grid-column: 7/11;
 }
 
 .footer-column5 {
-  grid-column: 12/13;
+  grid-column: 11/13;
+}
+
+.footer-column6 {
+  grid-column: 1/5;
+}
+
+.footer-column7 {
+  grid-column: 10/13;
+}
+
+
+.footer-column6 img {
+  width: 175px;
+  padding: 2em 0 0 0;
+}
+
+
+footer button {
+  font-size: 0.8em;
 }
 
 .footer-icons {
-  color: var(--light-grey);
   display: flex;
   flex-direction: row;
+  float: right;
+}
+
+.footer-icons i {
+  padding: 0 0 0 0.5em;
 }
 
 .footer-heading {
-  color: var(--light-grey);
-  text-transform: uppercase;
   font-size: 0.8em;
-  padding: 0 0 0.8em 0;
+  padding: 0 0 1.6em 0;
 }
 
 .footer-links {
-  color: var(--light-grey);
   font-size: 0.8em;
   display: flex;
   flex-direction: column;
+  line-height: 1.6em;
 }
 
 .footer-links a {
@@ -338,15 +356,10 @@ a {
   color: var(--white);
 }
 
-.column-slug {
-  grid-column: 1/13;
-}
-
 .copyright {
-  color: var(--light-grey);
   font-size: 0.6em;
   text-align: right;
-  padding: 1em;
+  padding: 6em 0 0 0;
 }
 
 #email {
@@ -359,8 +372,11 @@ a {
 
 @media (max-width: 767px) {
   section {
-    height: auto;
-    padding: 0 0 200px 0;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
   }
   
   p {
@@ -400,7 +416,7 @@ a {
   }
 
   .footer-column1 {
-  grid-column: 1/5;
+    grid-column: 1/5;
   }
 
   .footer-column2 {
@@ -417,6 +433,24 @@ a {
 
   .footer-column5 {
     grid-column: 1/5;
+  }
+
+  .footer-column6 {
+    grid-column: 1/5;
+  }
+
+  .footer-column7 {
+    grid-column: 1/5;
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    float: left;
+  }
+
+  .copyright {
+    text-align: left;
   }
 
 }

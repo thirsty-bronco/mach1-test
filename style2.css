@@ -155,14 +155,14 @@ section {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  min-height: 100vh;
+  min-height: 100%;
+
 }
 
 .flex-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 
 .three {
@@ -170,8 +170,15 @@ section {
   flex-direction: row;
   height: 100%;
   align-items: center;
-
 }
+
+.two {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
 
 h2 {
   color: var(--white);
@@ -180,9 +187,15 @@ h2 {
   text-align: center;
 }
 
-.child {
-  width: calc(100% / 3);
+.three .child {
+  width: calc(100vw / 3);
   height: calc(100vw / 3);
+}
+
+.two .child {
+  width: 50vw;
+  height: 50vw;
+  padding: 4em;
 }
 
 h3 {
@@ -203,7 +216,7 @@ h3 {
 }
 
 .creator:hover {
-  background-color: var(--light-grey);
+  background-color: var(--yellow);
   cursor: pointer;
 }
 
@@ -222,6 +235,11 @@ h3 {
   cursor: pointer;
 }
 
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+
+}
 
 .column-1-5 {
   grid-column: 1/5;
@@ -308,6 +326,7 @@ p {
 a {
   color: var(--light-grey);
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -316,6 +335,14 @@ a:hover {
 
 .text-color {
   color: var(--light-grey);
+}
+
+.text-color a {
+  color: var(--yellow);
+}
+
+.text-color a:hover {
+  color: var(--white);
 }
 
 .upsidedown {
@@ -436,15 +463,45 @@ footer button {
 }
 
 
+/* Large Screen */
+
+@media (min-width: 1400px) {
+  .three .child {
+    width: 467.6667;
+    height: 467.6667;
+  }
+}
+
 /* MOBILE SCREEN SIZE */
 
 @media (max-width: 767px) {
-  section {
-  width: 100%;
-  max-width: 1400px;
-  height: auto;
-  margin: auto;
+  #welcome {
+    height: auto;
   }
+
+  #mach1-for-creators {
+    height: auto;
+  }
+
+
+  .three {
+    flex-direction: column;
+  }
+
+  .three .child {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .two {
+    flex-direction: column;
+  }
+
+  .two .child {
+    width: 100vw;
+    padding: 1em;
+  }
+
 
   #dar {
     height: 100vh;
@@ -464,38 +521,6 @@ footer button {
     grid-column-gap: 0px;
     grid-row-gap: 50px;
     padding: 1em;
-  }
-
-  .column-logo {
-  grid-column: 1/2;
-  }
-
-  .column-nav-buttons {
-    grid-column: 2/5;
-  }
-
-  .column-1-5 {
-    grid-column: 1/5;
-  }
-
-  .column-5-9 {
-    grid-column: 1/5;
-  }
-
-  .column-9-13 {
-    grid-column: 1/5;
-  }
-
-  .column-2-7 {
-    grid-column: 1/5;
-  }
-
-  .column-7-12 {
-    grid-column: 1/5;
-  }
-
-  .big-col {
-    grid-column: 1/5;
   }
 
   .footer-column1 {

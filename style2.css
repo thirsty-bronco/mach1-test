@@ -182,6 +182,7 @@ h2 {
 
 .child {
   width: calc(100% / 3);
+  height: calc(100vw / 3);
 }
 
 h3 {

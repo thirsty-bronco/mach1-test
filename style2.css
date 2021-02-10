@@ -199,7 +199,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  color: var(--white);
+  font-size: 3em;
   padding: 1em;
   text-align: center;
   font-weight: 400;
@@ -466,9 +467,9 @@ footer button {
 /* Large Screen */
 
 @media (min-width: 1400px) {
-  .three .child {
-    width: 467.6667;
-    height: 467.6667;
+  .two .child {
+    width: 700;
+    height: 700;
   }
 }
 

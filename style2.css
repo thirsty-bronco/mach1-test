@@ -154,9 +154,7 @@ main {
 section {
   width: 100%;
   max-width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-
+  margin: 45vh auto;
 }
 
 .flex-center {
@@ -195,6 +193,11 @@ h2 {
 .two .child {
   width: 50vw;
   height: 50vw;
+  padding: 4em;
+}
+
+.two .child2 {
+  width: 50%;
   padding: 4em;
 }
 
@@ -241,45 +244,6 @@ h4 {
   font-weight: 400;
 
 }
-
-.column-1-5 {
-  grid-column: 1/5;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.column-5-9 {
-  grid-column: 5/9;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.column-9-13 {
-  grid-column: 9/13;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.column-2-7 {
-  grid-column: 2/7;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.column-7-12 {
-  grid-column: 7/12;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.big-col {
-  grid-column: 2/12;
-}
-
-.big-col video {
-  max-width: 100%;
-}
-
 
 .align-center {
   display: grid;
@@ -503,6 +467,10 @@ footer button {
     padding: 1em;
   }
 
+  .two .child2 {
+    width: 100vw;
+    padding: 1em;
+  }
 
   #dar {
     height: 100vh;

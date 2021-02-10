@@ -154,7 +154,16 @@ main {
 section {
   width: 100%;
   max-width: 1400px;
+}
+
+
+
+.vert-screen-center {
   margin: 45vh auto;
+}
+
+.vert-margin {
+  margin: 20vh auto;
 }
 
 .flex-center {

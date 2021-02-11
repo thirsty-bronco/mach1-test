@@ -172,6 +172,10 @@ section {
   justify-content: center;
 }
 
+.video {
+  margin: 1em;
+}
+
 .three {
   display: flex;
   flex-direction: row;

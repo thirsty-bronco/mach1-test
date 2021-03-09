@@ -154,6 +154,7 @@ main {
 section {
   width: 100%;
   max-width: 1400px;
+  padding: 0 0 10em 0;
 }
 
 
@@ -206,12 +207,12 @@ h2 {
 .two .child {
   width: 50vw;
   height: 50vw;
-  padding: 4em;
+  padding: 2em;
 }
 
 .two .child2 {
   width: 50%;
-  padding: 4em;
+  padding: 2em;
 }
 
 h3 {
@@ -288,8 +289,8 @@ h4 {
 }
 
 #product-image {
-  max-height: 100%;  
-  max-width: 100%; 
+  max-height: 80%;  
+  max-width: 80%; 
 }
 
 
